@@ -151,15 +151,20 @@ print("original order: ")
 print(places_list)
 
 print("\nAlphabetical order:")
+places_list.sort()
 print(places_list)
 
 print("\nReverse alphabetical:")
+places_list.sort(reverse=True)
 print(places_list)
 
 print("\nOriginal order: ")
+places_list.sort()
+places_list.sort(key=places_list.index)
 print(places_list)
 
 print("\nReversed: ")
+places_list.reverse()
 print(places_list)
 
 
