@@ -112,17 +112,16 @@ for river in rivers.keys():
 # Make several dictionaries, where each dictionary represents a different pet. In each dictionary, include the kind of animal and the owner's name.
 # Store these dictionaries in a list called pets. Next loop through your list as you do print everything you know about each pet.
 
-#pets.py 
-# Make an empty list to store pets in.
+#ets.py
 
 pets = []
 
 # Make individual pets, and store each one in the list.
 
 pet = {
-    'animal type': 'cats',
+    'animal type': 'cat',
     'name': 'Snow', 
-    'owner': 'katty',
+    'owner': 'Katty',
     'weight': 2,
     'eats': 'tuna'
 }
@@ -132,12 +131,21 @@ pets.append(pet)
 pet = {
     'animal type': 'dog',
     'name': 'Oreo', 
-    'Owner': 'Daniel',
-    'Weight': 3,
+    'owner': 'Daniel',
+    'weight': 3,
     'eats': 'chicken',
 }
  
 pets.append(pet)
+
+#more information about the pet 
+
+for pet in pets:
+    print(f"Here is some information about your pet: {pet['name']}.")
+    print(f"{pet['name']} is a {pet['animal type']}.")
+    print(f"{pet['name']} weighs {pet['weight']} lbs.")
+    print(f"{pet['name']} is fed {pet['eats']}.")
+    print(f"{pet['name']} is owned by {pet['owner']}.")
 
 # Display information about each pet 
 
