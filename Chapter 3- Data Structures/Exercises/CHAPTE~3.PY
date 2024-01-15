@@ -16,14 +16,9 @@ print(names[2])
 
 names = ['lai', 'sam', 'Jam']
 
-msg = "hello there, " + names[0].title() + "!"
-print(msg)
-
-msg = "hello there, " + names[1].title() + "!"
-print(msg)
-
-msg = "hello there, " + names[2].title() + "!"
-print(msg)
+for name in names:
+    msg = "hello there, {}!".format(name.title())
+    print(msg)
 
 # Exercise 3: your own list ballot_box_with_check 
 
@@ -33,18 +28,7 @@ print(msg)
 
 #favorite motorcycle 
 
-#print the names of all motorcycles 
-
 motorcycles = ['Honda', 'Yamaha', 'Suzuki']
 
 for motorcycle in motorcycles: 
-    print(motorcycle)
-
-print("\n I really like motorcycles!")
-
-#print the sentence about each motorcycle 
-
-for motorcycle in motorcycles: 
-    print(f"I really love {motorcycle} motorcycles!")
-
-print("\n I really love motorcycle!")
+    print(f"I would like to own a {motorcycle.lower()} motorcycle.")
